@@ -1,0 +1,178 @@
+.form {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 25px;
+}
+
+.form__label {
+    position: relative;
+    min-height: 38px;
+    border: none;
+    width: 30%;
+}
+
+.required:after {
+    content: " *";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    color: red;
+}
+
+.form__input {
+    position: relative;
+    min-height: 38px;
+    padding: 0 8px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form__input:focus {
+    box-shadow: 0px 0px 1px 1px #4c4cff;
+}
+
+.form__label_max {
+    width: 48%;
+}
+
+.form__datalist {
+    background-color: lightgray;
+}
+
+.form__datalist::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.form__datalist:focus, .form__datalist:hover {
+    background-color: transparent;
+}
+
+.form__btn-add-company {
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    margin: 0;
+    color: red;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.role {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.role__text {
+    width: 52%;
+    margin: 0;
+    text-align: center;
+}
+
+.role__choice {
+
+}
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    user-select: none;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+    background: rgb(255, 235, 135)
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+    color: #666;
+}
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+    background: #efefef;
+    color: #666;
+}
+
+.form__input_summary {
+    resize: vertical;
+    min-height: 150px;
+    padding: 10px;
+}
+
+.form__info {
+    width: 100%;
+    margin: 0;
+}
+
+.form__submit {
+    width: 100%;
+    text-align: end;
+}
+
+.form__submit_btn {
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #212529;
+    background: transparent;
+}
+.form__submit_btn:disabled{
+    background-color: gray;
+    cursor: default;
+}
+
+/*Обработка данных*/
+.bottom-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px dashed #000;
+}
+
+.bottom-info div {
+    position: relative;
+    cursor: default;
+}
+
+.bottom-info div span {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-info input {
+    vertical-align: middle;
+    margin-right: 5px;
+    pointer-events: auto;
+    cursor: pointer;
+}
