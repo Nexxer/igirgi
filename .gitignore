@@ -28,3 +28,4 @@ yarn-error.log*
 .idea/untitled.iml
 .idea/vcs.xml
 .idea/inspectionProfiles/Project_Default.xml
+/src/text.txt
